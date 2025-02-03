@@ -18,6 +18,7 @@ export default class Queue<T> {
         this.length++;
         if (!this.tail) {
             this.tail = this.head = node;
+            return;
         }
         
         this.tail.next = node;
