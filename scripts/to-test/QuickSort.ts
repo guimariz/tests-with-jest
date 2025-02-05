@@ -25,10 +25,9 @@ function partition(arr: number[], lo: number, hi: number): number {
     arr[hi] = arr[idx];
     arr[idx] = pivot;
 
-    return idx
+    return idx;
 }
 
 export default function quick_sort(arr: number[]): void {
     qs(arr, 0, arr.length - 1);
-
 }
